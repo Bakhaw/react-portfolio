@@ -1,28 +1,107 @@
-.App {
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Amiri');
+@import url('https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Homemade+Apple|Reenie+Beanie|Unica+One');
+
+body {
   text-align: center;
+  background-color: rgba(27, 180, 205, 0.75);
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+/*ACCUEIL*/
+/*Home*/
+
+.navigation {
+  height: 10vh;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+.home {
+  color: white;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  height: 90vh;
+  font-family: 'Amiri', serif;
+}
+.bienvenu {
+  margin-bottom: 10em;
+}
+
+/*Photo*/
+
+#photo {
+  height: 15em;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+/*Presentation*/
+
+.presentation {
+  color: white;
+  line-height: 2em;
+  font-size: 1.4em;
+}
+
+.presentation div {
+  margin: 2em;
+}
+.simplon {
+  color: black;
+}
+.simplon:hover {
+  color: white;
+}
+/*Réseaux*/
+
+.home .fa {
+  margin: 0.3em;
+  color: white;
+}
+.home .fa:hover {
+  color: #FF4081;
+}
+
+/*PORTFOLIO*/
+
+.soustitre {
+  color: black;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-style: italic;
+}
+.soustitre:hover {
   color: white;
 }
 
-.App-title {
-  font-size: 1.5em;
-}
+/*CONTACT*/
 
-.App-intro {
-  font-size: large;
+.contact {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  color: white;
 }
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.contact-title {
+  margin-bottom: 2.5em;
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 3em;
+}
+.contact-input {
+  margin: 1.5em;
+}
+.contact-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+.contact-list-items {
+  display: flex;
+  align-items: center;
+  font-family: 'Amiri', serif;
+}
+.contact .fa {
+  margin: 0.3em;
 }

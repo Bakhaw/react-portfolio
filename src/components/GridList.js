@@ -1,8 +1,5 @@
 import React from 'react';
 import {GridList, GridTile} from 'material-ui/GridList';
-import IconButton from 'material-ui/IconButton';
-import Subheader from 'material-ui/Subheader';
-import StarBorder from 'material-ui/svg-icons/toggle/star-border';
 import dino from '../images/dino_api.png';
 
 const styles = {
@@ -58,7 +55,7 @@ const tilesData = [
 ];
 
 const GridListPortfolio = () => (
-  <div style={styles.root}>
+  <div style={styles.root} className="home">
     <GridList
       cellHeight={180}
       style={styles.gridList}
@@ -71,7 +68,7 @@ const GridListPortfolio = () => (
           titleBackground='rgba(88, 117, 7, 0.3)'
         >
 
-          <img src={tile.img} />
+          <img src={tile.img} alt="projet"/>
         </GridTile>
       ))}
     </GridList>

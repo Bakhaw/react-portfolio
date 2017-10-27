@@ -11,7 +11,7 @@ class Home extends Component {
     return (
       <div className="container-fluid home">
         <div className="col-md-4">
-        <img src={photo} id="photo"/>
+        <img src={photo} id="photo" alt="moi"/>
         <h1>Faïssal Hattou</h1>
         <h3>Développeur Fullstack JS</h3>
         <h3>Ile-de-France</h3>

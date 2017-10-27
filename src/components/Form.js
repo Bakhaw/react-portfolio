@@ -24,14 +24,14 @@ const Form = () => (
         <h4>faissal.hattou@gmail.com</h4>
       </div>
     </div>
-    <div className="contact-form">
+    <form action="https://formspree.io/faissal.hattou@gmail.com" method="POST" className="contact-form">
       <h1 className="contact-title">Mon profil vous plaît ?</h1>
-      <TextField className="contact-input" floatingLabelText="Votre nom" floatingLabelFixed={true} floatingLabelFocusStyle={styles.floatingLabelFocusStyle} floatingLabelStyle={styles.floatingLabelStyle} underlineFocusStyle={styles.underlineStyle} inputStyle={styles.inputStyle}/>
-      <TextField className="contact-input" floatingLabelText="Votre adresse mail" floatingLabelFixed={true} floatingLabelFocusStyle={styles.floatingLabelFocusStyle} floatingLabelStyle={styles.floatingLabelStyle} underlineFocusStyle={styles.underlineStyle} inputStyle={styles.inputStyle}/>
-      <TextField className="contact-input" floatingLabelText="Votre message" floatingLabelFixed={true} floatingLabelFocusStyle={styles.floatingLabelFocusStyle} floatingLabelStyle={styles.floatingLabelStyle} underlineFocusStyle={styles.underlineStyle} inputStyle={styles.inputStyle}/>
+      <TextField type="text" name="nom" className="contact-input" floatingLabelText="Votre nom" floatingLabelFixed={true} floatingLabelFocusStyle={styles.floatingLabelFocusStyle} floatingLabelStyle={styles.floatingLabelStyle} underlineFocusStyle={styles.underlineStyle} inputStyle={styles.inputStyle}/>
+      <TextField type="email" name="_replyto" className="contact-input" floatingLabelText="Votre adresse mail" floatingLabelFixed={true} floatingLabelFocusStyle={styles.floatingLabelFocusStyle} floatingLabelStyle={styles.floatingLabelStyle} underlineFocusStyle={styles.underlineStyle} inputStyle={styles.inputStyle}/>
+      <TextField name="message" className="contact-input" floatingLabelText="Votre message" floatingLabelFixed={true} floatingLabelFocusStyle={styles.floatingLabelFocusStyle} floatingLabelStyle={styles.floatingLabelStyle} underlineFocusStyle={styles.underlineStyle} inputStyle={styles.inputStyle}/>
 
-      <FlatButton label="Envoyer" secondary={true}/>
-    </div>
+      <FlatButton type="submit" label="Envoyer" secondary={true}/>
+    </form>
   </div>
 );
 

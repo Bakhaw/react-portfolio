@@ -1,5 +1,6 @@
 import React from 'react';
 import {GridList, GridTile} from 'material-ui/GridList';
+import Competences from './Competences';
 import dino from '../images/dino_api.png';
 import salle from '../images/salle.png';
 import bootstrapStarter from '../images/bootstrap_starter.png';
@@ -17,8 +18,10 @@ const styles = {
     width: 550,
     height: 450,
     overflowY: 'auto',
-    fontWeight: 'bold',
-  }
+  },
+  titleStyle: {
+    color: 'rgb(217, 216, 204)',
+  },
 };
 
 const tilesData = [
@@ -54,27 +57,8 @@ const GridListPortfolio = () => (
     <div className="row portfolio">
       <div className="col-md-6 competences">
         <h1>Mes Compétences:</h1>
-        <div className="competences-icons">
-          <div>
-            <i class="devicon-html5-plain-wordmark colored"></i>
-            <i class="devicon-css3-plain-wordmark colored"></i>
-            <i class="devicon-bootstrap-plain-wordmark colored"></i>
-            <i class="devicon-javascript-plain colored"></i>
-          </div>
-          <div>
-            <i class="devicon-mongodb-plain-wordmark colored"></i>
-            <i class="devicon-express-original colored"></i>
-            <i class="devicon-react-original-wordmark colored"></i>
-            <i class="devicon-nodejs-plain-wordmark colored"></i>
-          </div>
-          <div>
-            <i class="devicon-jquery-plain-wordmark colored"></i>
-            <i class="devicon-git-plain-wordmark colored"></i>
-            <i class="devicon-github-plain-wordmark colored"></i>
-            <i class="devicon-mocha-plain colored"></i>
-            <i class="devicon-jasmine-plain colored"></i>
-            <i class="devicon-sass-original colored"></i>
-          </div>
+        <div>
+          <Competences />
         </div>
       </div>
       <div className="col-md-6 grid-list">
@@ -83,7 +67,7 @@ const GridListPortfolio = () => (
         <GridList cellHeight={180} style={styles.gridList}>
           {tilesData.map((tile) => (
             <a href={tile.lien} target="_blank">
-            <GridTile key={tile.img} title={tile.title} subtitle={< span > <a className="soustitre" href={tile.lien} target="_blank">voir sur Github</a> < /span>} style={{borderRadius: 30}} titleBackground='rgba(120, 121, 117, 0.3)'>
+            <GridTile key={tile.img} title={tile.title} subtitle={< span > <a className="soustitre" href={tile.lien} target="_blank">voir sur Github</a> < /span>} style={{borderRadius: 30}} titleStyle={styles.titleStyle} titleBackground='rgba(6, 6, 6, 0.86)'>
 
               <img src={tile.img} alt="projet" className="projet-image"/>
             </GridTile>

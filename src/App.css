@@ -98,7 +98,7 @@ body {
 }
 
 .soustitre {
-  color: black;
+  color: rgb(217, 216, 204);
   font-size: 1.2em;
   font-weight: bold;
   font-style: italic;
@@ -115,13 +115,16 @@ body {
   flex-direction: column;
   font-size: 5em;
 }
-
-.competences-icons {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 100%;
+.progress-bar {
+  background-color: rgb(127, 210, 78);
 }
+
+.competences-bar {
+  width: 50%;
+  margin: auto;
+  text-align: left;
+}
+
 
 /*CONTACT*/
 
@@ -139,6 +142,7 @@ body {
   margin-bottom: 1.5em;
   font-family: 'Reenie Beanie', cursive;
   font-size: 5em;
+  color: rgb(241, 246, 6)
 }
 .contact-input {
   font-size: 5em;

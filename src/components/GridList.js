@@ -82,10 +82,12 @@ const GridListPortfolio = () => (
         <div>
         <GridList cellHeight={180} style={styles.gridList}>
           {tilesData.map((tile) => (
+            <a href={tile.lien} target="_blank">
             <GridTile key={tile.img} title={tile.title} subtitle={< span > <a className="soustitre" href={tile.lien} target="_blank">voir sur Github</a> < /span>} style={{borderRadius: 30}} titleBackground='rgba(120, 121, 117, 0.3)'>
 
               <img src={tile.img} alt="projet" className="projet-image"/>
             </GridTile>
+          </a>
           ))}
         </GridList>
       </div>

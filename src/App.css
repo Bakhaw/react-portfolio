@@ -51,7 +51,7 @@ body {
 .presentation {
   color: white;
   line-height: 2em;
-  font-size: 1.4em;
+  font-size: 1.8em;
 }
 
 .presentation div {
@@ -134,12 +134,14 @@ body {
   color: white;
   background-image: linear-gradient(rgb(0, 0, 0) 0, rgba(15, 15, 15, 0.41) 0);
 }
+
 .contact-title {
-  margin-bottom: 2.5em;
+  margin-bottom: 1.5em;
   font-family: 'Reenie Beanie', cursive;
-  font-size: 3em;
+  font-size: 5em;
 }
 .contact-input {
+  font-size: 5em;
   margin: 1.5em;
 }
 .contact-list {

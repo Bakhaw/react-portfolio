@@ -21,7 +21,7 @@ const progressData = [
   },
   {
     name: 'NodeJS',
-    value: 40,
+    value: 30,
   },
   {
     name: 'React',

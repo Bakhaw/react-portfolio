@@ -91,7 +91,7 @@ class Home extends Component {
 
     <Mobile>
       <div className="container-fluid mobile-home">
-        <div className="col-md-4">
+        <div>
           <img src={photo} id="photo" alt="moi"/>
           <h1>Faïssal Hattou</h1>
           <h3>Développeur Fullstack JS</h3>
@@ -103,7 +103,7 @@ class Home extends Component {
             <i className="fa fa-github fa-3x" aria-hidden="true"></i>
           </a>
         </div>
-        <div className="col-md-6 presentation">
+        <div className="mobile-presentation">
           <div>
             <p>Bienvenu à vous !</p>
           </div>
@@ -113,7 +113,7 @@ class Home extends Component {
               <a className="simplon" href={simplon} target="_blank"> Simplon.co </a>
               depuis mai 2017. J'aurai fini ma formation le 10 janvier 2018, et j'aimerais poursuivre mon apprentissage.
             </p>
-            <p>
+            <p style={{textAlign: "right"}}>
               Je recherche donc un employeur avec qui signer un contrat de professionnalisation à partir de février 2018.
             </p>
           </div>

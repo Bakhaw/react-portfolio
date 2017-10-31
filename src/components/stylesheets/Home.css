@@ -98,3 +98,15 @@
 .mobile-home .fa:hover {
   color: #FF4081;
 }
+
+/*PRESENTATION*/
+
+.mobile-presentation {
+  color: white;
+  font-size: 1.5em;
+  text-align: left;
+}
+
+.mobile-presentation div {
+  margin: 2em;
+}

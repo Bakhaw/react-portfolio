@@ -49,6 +49,40 @@
   margin: 0.3em;
 }
 
+/*TABLET*/
+
+/*TITLE*/
+
+.tablet-contact-title {
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 4em;
+  color: rgb(241, 246, 6)
+}
+
+.tablet-contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+}
+
+/*CONTACT-LIST*/
+
+.tablet-contact-list {
+  display: flex;
+  align-items: center;
+}
+
+/*LIST ITEMS*/
+
+.tablet-contact-list-items {
+  display: flex;
+  align-items: center;
+  font-family: 'Amiri', serif;
+}
+
+
 /*MOBILE*/
 
 /*TITLE*/

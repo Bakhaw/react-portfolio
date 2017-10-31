@@ -35,6 +35,14 @@ const styles = {
     color: 'rgb(217, 216, 204)',
   },
 };
+const tabletStyles = {
+  gridList: {
+    width: 450,
+    height: 350,
+    overflowY: 'auto',
+    margin: 'auto',
+  },
+}
 
 const mobileStyles = {
   gridList: {
@@ -75,7 +83,7 @@ const tilesData = [
 
 const GridListPortfolio = () => (
   <div className="container-fluid">
-    {/* DESKTOP VERSION */}
+    {/* DESKTOP Version */}
     <Desktop>
     <div className="row portfolio">
       <div className="col-md-6 competences">
@@ -101,6 +109,38 @@ const GridListPortfolio = () => (
       </div>
     </div>
   </Desktop>
+
+  {/* TABLET Version */}
+  <Tablet>
+  <div className="row tablet-portfolio">
+    <div className="col-md-6 tablet-competences">
+      <div className="col-sm-6">
+        <h1>Mes Compétences:</h1>
+        <Competences />
+      </div>
+      <div className="col-sm-6 tablet-text-competences">
+        <p>Au vue de ma formation, j'ai pu découvrir et travailler sur différentes technos. Mes préférences:</p>
+        <p>Niveau front-end: je suis particulièrement intéressé par les frameworks JavaScript comme React.</p>
+        <p>Pour le back-end: j'ai principalement aimé travaillé avec MongoDB, NodeJS et Express</p>
+      </div>
+    </div>
+    <div className="col-md-6 tablet-grid-list">
+      <h1>Quelques Projets:</h1>
+      <div>
+      <GridList cellHeight={180} style={tabletStyles.gridList}>
+        {tilesData.map((tile) => (
+          <a href={tile.lien} target="_blank">
+          <GridTile key={tile.img} title={tile.title} subtitle={< span > <a className="soustitre" href={tile.lien} target="_blank">voir sur Github</a> < /span>} style={{borderRadius: 30}} titleStyle={styles.titleStyle} titleBackground='rgba(6, 6, 6, 0.86)'>
+
+            <img src={tile.img} alt="projet" className="projet-image"/>
+          </GridTile>
+        </a>
+        ))}
+      </GridList>
+    </div>
+    </div>
+  </div>
+</Tablet>
 
   {/* MOBILE Version */}
   <Mobile>

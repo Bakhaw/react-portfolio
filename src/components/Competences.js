@@ -4,12 +4,8 @@ import './stylesheets/Competences.css';
 
 const progressData = [
   {
-    name: 'HTML',
+    name: 'HTML/CSS',
     value: 75,
-  },
-  {
-    name: 'CSS',
-    value: 60,
   },
   {
     name: 'Bootstrap',

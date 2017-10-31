@@ -145,13 +145,13 @@ const GridListPortfolio = () => (
   {/* MOBILE Version */}
   <Mobile>
   <div className="row mobile-portfolio">
-    <div className="col-md-6 competences">
+    <div className="competences">
       <h1>Mes Compétences:</h1>
       <div>
         <Competences />
       </div>
     </div>
-    <div className="col-md-6 mobile-grid-list">
+    <div className="mobile-grid-list">
       <h1>Quelques Projets:</h1>
       <div>
       <GridList cellHeight={150} style={mobileStyles.gridList}>

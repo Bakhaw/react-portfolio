@@ -41,12 +41,11 @@ class Home extends Component {
           <div>
             <p>
               Je suis Faïssal Hattou, étudiant en développement web à
-              <a className="simplon" href={simplon} target="_blank">Simplon.co
-              </a>
+              <a className="simplon" href={simplon} target="_blank"> Simplon.co </a>
               depuis mai 2017. J'aurai fini ma formation le 10 janvier 2018, et j'aimerais poursuivre mon apprentissage.
             </p>
             <p>
-              Je recherche donc un employeur avec qui signer un contrat de professionnalisation à partir de février 2018.
+              Je recherche donc un employeur avec qui signer un contrat de professionnalisation durant 12 mois à partir de février 2018.
             </p>
           </div>
         </div>
@@ -75,12 +74,11 @@ class Home extends Component {
         <div>
           <p>
             Je suis Faïssal Hattou, étudiant en développement web à
-            <a className="simplon" href={simplon} target="_blank">Simplon.co
-            </a>
+            <a className="simplon" href={simplon} target="_blank"> Simplon.co </a>
             depuis mai 2017. J'aurai fini ma formation le 10 janvier 2018, et j'aimerais poursuivre mon apprentissage.
           </p>
           <p>
-            Je recherche donc un employeur avec qui signer un contrat de professionnalisation à partir de février 2018.
+            Je recherche donc un employeur avec qui signer un contrat de professionnalisation durant 12 mois à partir de février 2018.
           </p>
         </div>
       </div>
@@ -114,7 +112,7 @@ class Home extends Component {
               depuis mai 2017. J'aurai fini ma formation le 10 janvier 2018, et j'aimerais poursuivre mon apprentissage.
             </p>
             <p style={{textAlign: "right"}}>
-              Je recherche donc un employeur avec qui signer un contrat de professionnalisation à partir de février 2018.
+              Je recherche donc un employeur avec qui signer un contrat de professionnalisation durant 12 mois à partir de février 2018.
             </p>
           </div>
         </div>

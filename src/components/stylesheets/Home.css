@@ -1,0 +1,51 @@
+/*HOME*/
+
+.home {
+  height: 90vh;
+  color: white;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  font-family: 'Amiri', serif;
+  background-image: linear-gradient(rgb(0, 0, 0) 0, rgba(15, 15, 15, 0.41) 0);
+}
+
+/*PHOTO*/
+
+#photo {
+  height: 15em;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+/*HOME - RESEAUX*/
+
+.home .fa {
+  margin: 0.3em;
+  color: white;
+}
+
+.home .fa:hover {
+  color: #FF4081;
+}
+
+/*PRESENTATION*/
+
+.presentation {
+  color: white;
+  line-height: 2em;
+  font-size: 1.8em;
+}
+
+.presentation div {
+  margin: 2em;
+}
+
+.simplon {
+  color: black;
+  font-weight: bold;
+}
+
+.simplon:hover {
+  color: white;
+}

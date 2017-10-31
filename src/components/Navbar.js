@@ -5,6 +5,7 @@ import SwipeableViews from 'react-swipeable-views';
 import Home from './Home';
 import Form from './Form';
 import GridList from './GridList';
+import './stylesheets/Navbar.css';
 
 const muiTheme = getMuiTheme({
     tabs: {backgroundColor: 'rgb(156, 175, 160)'},

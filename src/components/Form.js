@@ -1,6 +1,7 @@
 import React from 'react';
 import TextField from 'material-ui/TextField';
 import FlatButton from 'material-ui/FlatButton';
+import './stylesheets/Form.css';
 
 const styles = {
   inputStyle: {color: '#fff'},
@@ -24,7 +25,7 @@ const Form = () => (
         <h4>faissal.hattou@gmail.com</h4>
       </div>
     </div>
-    <form action="https://formspree.io/faissal.hattou@gmail.com" method="POST" className="contact-form">
+    <form action="https://formspree.io/faissal.hattou@gmail.com" method="POST">
       <h1 className="contact-title">Mon profil vous plaît ?</h1>
       <TextField type="text" name="nom" className="contact-input" floatingLabelText="Votre nom" floatingLabelFixed={true} floatingLabelFocusStyle={styles.floatingLabelFocusStyle} floatingLabelStyle={styles.floatingLabelStyle} underlineFocusStyle={styles.underlineStyle} inputStyle={styles.inputStyle}/>
       <TextField type="email" name="_replyto" className="contact-input" floatingLabelText="Votre adresse mail" floatingLabelFixed={true} floatingLabelFocusStyle={styles.floatingLabelFocusStyle} floatingLabelStyle={styles.floatingLabelStyle} underlineFocusStyle={styles.underlineStyle} inputStyle={styles.inputStyle}/>

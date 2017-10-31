@@ -1,5 +1,6 @@
 import React from 'react';
 import { Progress } from 'reactstrap';
+import './stylesheets/Competences.css';
 
 const progressData = [
   {

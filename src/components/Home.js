@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import photo from '../images/me.jpg';
+import './stylesheets/Home.css';
 
 const linkedin = 'https://www.linkedin.com/in/faissal-hattou-9868b5144/';
-const github = 'https://github.com/Bakhaw';
-const simplon = 'https://simplon.co/';
+const github   = 'https://github.com/Bakhaw';
+const simplon  = 'https://simplon.co/';
 
 class Home extends Component {
 

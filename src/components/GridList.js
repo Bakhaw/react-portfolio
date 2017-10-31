@@ -1,12 +1,15 @@
 import React from 'react';
 import {GridList, GridTile} from 'material-ui/GridList';
 import Competences from './Competences';
+// Import des img projets
 import dino from '../images/dino_api.png';
 import salle from '../images/salle.png';
 import bootstrapStarter from '../images/bootstrap_starter.png';
 import jqueryProjects from '../images/meme.png';
 import airbnb from '../images/airbnb.png';
 import blogAdmin from '../images/B-Admin_2.png';
+// Import css
+import './stylesheets/GridList.css';
 
 const styles = {
   root: {

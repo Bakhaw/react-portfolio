@@ -1,0 +1,11 @@
+/*COMPETENCES*/
+
+.progress-bar {
+  background-color: rgb(127, 210, 78);
+}
+
+.competences-bar {
+  width: 50%;
+  margin: auto;
+  text-align: left;
+}

@@ -1,0 +1,50 @@
+/*CONTACT*/
+
+.contact {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  align-items: center;
+  height: 90vh;
+  color: white;
+  background-image: linear-gradient(rgb(0, 0, 0) 0, rgba(15, 15, 15, 0.41) 0);
+}
+
+/*CONTACT-LIST*/
+
+.contact-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+
+/*LIST ITEMS*/
+
+.contact-list-items {
+  display: flex;
+  align-items: center;
+  font-family: 'Amiri', serif;
+}
+
+/*TITLE*/
+
+.contact-title {
+  margin-bottom: 1.5em;
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 5em;
+  color: rgb(241, 246, 6)
+}
+
+/*CONTACT INPUT*/
+
+.contact-input {
+  font-size: 5em;
+  margin: 1.5em;
+}
+
+/*FONT AWESOME*/
+
+.contact .fa {
+  margin: 0.3em;
+}

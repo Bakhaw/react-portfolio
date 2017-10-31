@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import myvideo from '../videos/bg-video.mp4';
+import './stylesheets/BackgroundVideo.css';
 
 class BackgroundVideo extends Component {
 

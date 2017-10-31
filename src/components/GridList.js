@@ -46,8 +46,8 @@ const tabletStyles = {
 
 const mobileStyles = {
   gridList: {
-    width: 400,
-    height: 300,
+    width: 300,
+    height: 200,
     overflowY: 'auto',
     margin: 'auto',
   },

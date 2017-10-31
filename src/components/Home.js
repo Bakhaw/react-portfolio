@@ -39,14 +39,9 @@ class Home extends Component {
             <p>Bienvenu à vous !</p>
           </div>
           <div>
-            <p>
-              Je suis Faïssal Hattou, étudiant en développement web à
-              <a className="simplon" href={simplon} target="_blank"> Simplon.co </a>
-              depuis mai 2017. J'aurai fini ma formation le 10 janvier 2018, et j'aimerais poursuivre mon apprentissage.
+            <p>Je suis Faïssal Hattou, étudiant en développement web à<a className="simplon" href={simplon} target="_blank"> Simplon.co </a>depuis mai 2017. J'aurai fini ma formation le 10 janvier 2018, et j'aimerais poursuivre mon apprentissage.
             </p>
-            <p>
-              Je recherche donc un employeur avec qui signer un contrat de professionnalisation durant 12 mois à partir de février 2018.
-            </p>
+            <p>Je recherche donc un employeur avec qui signer un contrat de professionnalisation durant 12 mois à partir de février 2018.</p>
           </div>
         </div>
       </div>

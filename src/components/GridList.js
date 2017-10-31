@@ -11,6 +11,15 @@ import blogAdmin from '../images/B-Admin_2.png';
 // Import css
 import './stylesheets/GridList.css';
 
+//Responsive
+
+import Responsive from 'react-responsive';
+
+const Desktop = ({ children }) => <Responsive minWidth={992} children={children} />;
+const Tablet  = ({ children }) => <Responsive minWidth={768} maxWidth={992} children={children} />;
+const Mobile  = ({ children }) => <Responsive maxWidth={768} children={children} />;
+const Default = ({ children }) => <Responsive minWidth={768} children={children} />;
+
 const styles = {
   root: {
     display: 'flex',
@@ -26,6 +35,15 @@ const styles = {
     color: 'rgb(217, 216, 204)',
   },
 };
+
+const mobileStyles = {
+  gridList: {
+    width: 400,
+    height: 300,
+    overflowY: 'auto',
+    margin: 'auto',
+  },
+}
 
 const tilesData = [
   {
@@ -57,6 +75,8 @@ const tilesData = [
 
 const GridListPortfolio = () => (
   <div className="container-fluid">
+    {/* DESKTOP VERSION */}
+    <Desktop>
     <div className="row portfolio">
       <div className="col-md-6 competences">
         <h1>Mes Compétences:</h1>
@@ -65,7 +85,7 @@ const GridListPortfolio = () => (
         </div>
       </div>
       <div className="col-md-6 grid-list">
-        <h1>Mes Projets:</h1>
+        <h1>Quelques Projets:</h1>
         <div>
         <GridList cellHeight={180} style={styles.gridList}>
           {tilesData.map((tile) => (
@@ -80,6 +100,34 @@ const GridListPortfolio = () => (
       </div>
       </div>
     </div>
+  </Desktop>
+
+  {/* MOBILE Version */}
+  <Mobile>
+  <div className="row mobile-portfolio">
+    <div className="col-md-6 competences">
+      <h1>Mes Compétences:</h1>
+      <div>
+        <Competences />
+      </div>
+    </div>
+    <div className="col-md-6 mobile-grid-list">
+      <h1>Quelques Projets:</h1>
+      <div>
+      <GridList cellHeight={150} style={mobileStyles.gridList}>
+        {tilesData.map((tile) => (
+          <a href={tile.lien} target="_blank">
+          <GridTile key={tile.img} title={tile.title} subtitle={< span > <a className="soustitre" href={tile.lien} target="_blank">voir sur Github</a> < /span>} style={{borderRadius: 30}} titleStyle={styles.titleStyle} titleBackground='rgba(6, 6, 6, 0.86)'>
+
+            <img src={tile.img} alt="projet" className="projet-image"/>
+          </GridTile>
+        </a>
+        ))}
+      </GridList>
+    </div>
+    </div>
+  </div>
+</Mobile>
   </div>
 );
 

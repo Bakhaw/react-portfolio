@@ -91,7 +91,7 @@ const Form = () => (
           </div>
           <div className="mobile-contact-list-items">
             <i class="fa fa-mobile fa-2x" aria-hidden="true"></i>
-            <h3>+33634161866</h3>
+            <h3>+33 6 34 16 18 66</h3>
           </div>
           <div className="mobile-contact-list-items">
             <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>

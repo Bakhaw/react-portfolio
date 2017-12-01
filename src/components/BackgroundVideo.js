@@ -13,7 +13,7 @@ class BackgroundVideo extends Component {
 
   render() {
     return (
-        <video id="background-video" loop autoPlay>
+        <video id="bg-video" loop autoPlay>
           <source src={this.state.videoURL} type='video/mp4'/>
           <source src={this.state.videoURL} type='video/ogg'/>
         </video>
